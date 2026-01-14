@@ -7,7 +7,7 @@
     --acao: #2563eb;
 }
 
-[data-tema="escuro"] {
+[data-tema ="escuro"] {
     --bg: #0b1220;
     --texto: #e5e7eb;
     --borda: #1f2937;
@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--bg);
-    counter-reset: var(--texto);
+    color: var(--texto);
 
 }
 
@@ -53,7 +53,9 @@ body {
     background-color: var(--caixa);
     border-radius: .5rem;
     padding: 2rem 1rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    max-width: 80%;
+
 }
 
 h1 {
@@ -80,4 +82,32 @@ input {
     border-radius: .5rem;
     background-color: var(--bg);
     color: var(--texto);
+}
+
+.btn{
+    padding: .6rem .9rem;
+    border: 1px solid var(--borda);
+    background-color: var(--bg);
+    color: var(--texto);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.btn.primario {
+    margin-top: 1rem;
+    background-color: var(--acao);
+    color: #FFF;
+}
+
+.rodape{
+    border-top: 1 px solid var(--borda);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    margin-top: auto;
+
 }
